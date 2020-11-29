@@ -7,12 +7,50 @@
     <title>Analog Clock</title>
   </head>
 
-  <body>
+  <body id="bodyBackground">
 
-    <div class="clock">
+    <div id="clockBackground" class="clock">
       <div class="hand hour"></div>
       <div class="hand minute"></div>
       <div class="hand second"></div>
+    </div>
+
+    <div class="color-menu">
+      <ul>
+        <li><label for="backgroundColor">Background:</label>
+            <select id="backgroundColor" name="color-options" onchange="changeColor()">
+              <option value=0>Color Option 1</option>
+              <option value=1>Color Option 2</option>
+              <option value=2>Color Option 3</option>
+              <option value=3>Color Option 4</option>
+              <option value=4>Color Option 5</option>
+              <option value=5>Color Option 6</option>
+              <option value=6>Color Option 7 </option>
+            </select>
+          </li>
+        <li><label for="clockColor">Clock:</label>
+          <select id="clockColor" name="clockColor" onchange="changeColor()">
+            <option value=0>Color Option 1</option>
+            <option value=1>Color Option 2</option>
+            <option value=2>Color Option 3</option>
+            <option value=3>Color Option 4</option>
+            <option value=4>Color Option 5</option>
+            <option value=5>Color Option 6</option>
+            <option value=6>Color Option 7</option>
+          </select>
+        </li>
+        <li><label for="clockBorderColor">Clock Border:</label>
+          <select id="clockBorderColor" name="clockBorderColor" onchange="changeColor()">
+            <option value=0>Color Option 1</option>
+            <option value=1>Color Option 2</option>
+            <option value=2>Color Option 3</option>
+            <option value=3>Color Option 4</option>
+            <option value=4>Color Option 5</option>
+            <option value=5>Color Option 6</option>
+            <option value=6>Color Option 7</option>
+          </select>
+        </li>
+      </ul>
     </div>
     
     <script type="text/javascript" src="analogClock.js"></script>
